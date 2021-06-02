@@ -23,7 +23,7 @@ float pi = 1;
     pt_inside_circle++;
   }
   
-  return 4*((float)pt_inside_circle/(float)n));
+  return 4*((float)pt_inside_circle/(float)n);
 }
 
 int main(void) {
