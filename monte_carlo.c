@@ -8,8 +8,8 @@ float mc_pi(int n)
 float pi = 1;
  int pt_inside_circle = 0; 
   for(int i = 0; i < n;i++){
-  int x = frandom();
-  int y = frandom();
+  float x = frandom();
+  float y = frandom();
     
   float distance = (float)sqrt( x*x+y*y);
   if(distance <=1 )
