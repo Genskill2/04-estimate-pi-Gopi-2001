@@ -3,7 +3,21 @@
 #include <stdio.h>
 #include <math.h>
 
-float mc_pi(int);
+float mc_pi(int n)
+{
+float pi = 1;
+ int pt_inside_circle = 0; 
+  for(int i = 0; i < n;i++){
+  int x = frandom();
+  int y = frandom();
+    
+  float distance = (float)sqrt( x*x+y*y);
+  if(distance <=1 )
+    pt_inside_circle++;
+  }
+  
+  return 4*((float)(pt_inside_circle/n));
+}
 
 float frandom() {
   long int q = random();
