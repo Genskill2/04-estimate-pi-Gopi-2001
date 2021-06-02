@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-
+float frandom();
 float mc_pi(int n)
 {
 float pi = 1;
