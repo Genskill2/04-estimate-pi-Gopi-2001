@@ -12,7 +12,7 @@ float frandom() {
 
 float mc_pi(int n)
 {
-float pi = 1;
+  float pi;
  int pt_inside_circle = 0; 
   for(int i = 0; i < n;i++){
   float x = frandom();
@@ -22,8 +22,8 @@ float pi = 1;
   if(distance <=1 )
     pt_inside_circle++;
   }
-  
-  return 4*((float)pt_inside_circle/(float)n);
+  pi = 4*((float)pt_inside_circle/(float)n);
+  return pi;
 }
 
 int main(void) {
