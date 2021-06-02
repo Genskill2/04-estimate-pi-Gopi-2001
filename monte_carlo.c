@@ -2,7 +2,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-float frandom();
+
+
+float frandom() {
+  long int q = rand();
+  float ret = (float)q/(float)RAND_MAX;
+  return ret;
+}
+
 float mc_pi(int n)
 {
 float pi = 1;
@@ -16,13 +23,7 @@ float pi = 1;
     pt_inside_circle++;
   }
   
-  return 4*((float)(pt_inside_circle/n));
-}
-
-float frandom() {
-  long int q = random();
-  float ret = (float)q/(float)RAND_MAX;
-  return ret;
+  return 4*((float)pt_inside_circle/(float)n));
 }
 
 int main(void) {
